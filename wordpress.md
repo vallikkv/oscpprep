@@ -1,7 +1,7 @@
 Wordpress commands
 ==================
 
-__1 - Enumerating users __
+**Enumerating users**
 
 wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -e u
 
