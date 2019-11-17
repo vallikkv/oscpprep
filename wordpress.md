@@ -11,7 +11,7 @@ wpscan --disable-tls-checks --url https://192.168.1.6:12380/blogblog -P /usr/sha
 
 **Enumerating wordpress users and plugins**
 
-wpscan --disable-tls-checks --url https://192.168.1.30:12380/blogblog/ --plugin-agressive (To be checked)
+wpscan --disable-tls-checks --url https://192.168.1.30:12380/blogblog/ --plugins-detection aggressive
 
 
 Reverse shell exploits
