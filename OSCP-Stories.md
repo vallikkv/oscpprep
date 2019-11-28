@@ -8,6 +8,6 @@ ___Story 2___
 
 https://medium.com/@falconspy/passing-oscp-exam-attempt-3-efce6b0d6f6c
 
-__Story 3__
+___Story 3___
 
 https://medium.com/@falconspy/oscp-exam-attempt-1-1893df5a0a00
