@@ -3,12 +3,12 @@ Linux Privilege escalation
 
 A typical Linux privilege escalation method is based on one of the following:
 
-Exploiting services running as root
-Exploiting SUID executables
-Exploiting SUDO rights/user
-Exploiting badly configured cron jobs
-Exploiting users with "." in their path
-Kernel Exploits
+1. Exploiting services running as root
+2. Exploiting SUID executables
+3. Exploiting SUDO rights/user
+4. Exploiting badly configured cron jobs
+5. Exploiting users with "." in their path
+6. Kernel Exploits
 
 
 ***1. Command to get bash shell from $***
