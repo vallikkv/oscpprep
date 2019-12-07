@@ -10,6 +10,7 @@ A typical Linux privilege escalation method is based on one of the following:
 5. Exploiting users with "." in their path
 6. Kernel Exploits
 
+Kernel exploits are typically our last resort, as there is a risk that we crash the system in the process.
 
 ***1. Command to get bash shell from $***
 
