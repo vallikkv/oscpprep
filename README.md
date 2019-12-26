@@ -10,5 +10,12 @@ https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks
 
 searchsploit samba\ 3.0.20
 
+## VI cursor movement commands
+
+To move left, press h .
+To move right, press l .
+To move down, press j .
+To move up, press k .
+
 
 
