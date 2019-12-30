@@ -17,5 +17,10 @@ To move right, press l .
 To move down, press j .
 To move up, press k .
 
+## HExadump to ascii (Reverse)
+
+https://www.rapidtables.com/convert/number/hex-to-ascii.html
+
+
 
 
