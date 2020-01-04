@@ -22,5 +22,7 @@ To move up, press k .
 https://www.rapidtables.com/convert/number/hex-to-ascii.html
 
 
+## Recover deleted file using grep & regexp
 
+grep '[a-z0-9]\{32\}' /dev/sdb
 
