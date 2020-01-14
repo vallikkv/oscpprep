@@ -26,3 +26,7 @@ https://www.rapidtables.com/convert/number/hex-to-ascii.html
 
 grep '[a-z0-9]\{32\}' /dev/sdb
 
+## Windows privilege escalation
+
+https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/
+
