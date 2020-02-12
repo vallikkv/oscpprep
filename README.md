@@ -4,6 +4,10 @@
 
 https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks
 
+## Using VI in low privilege shell
+
+https://w00troot.blogspot.com/2017/11/using-vi-in-low-privilege-shell.html
+
 ##### Easy Method to check the 32 or 64 type of machine - /bin/ls
 
 ## Keyword to search in Searchsploit 
