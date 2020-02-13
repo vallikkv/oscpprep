@@ -1,5 +1,9 @@
 # OSCP Preparation notes
 
+## Enumeration Ports and purposes
+
+https://sushant747.gitbooks.io/total-oscp-guide/list_of_common_ports.html
+
 ## Useful links
 
 https://jivoi.github.io/2015/07/01/pentest-tips-and-tricks
