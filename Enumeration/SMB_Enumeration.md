@@ -37,3 +37,13 @@ smbclient -L 10.10.10.178 -N
 ```
 
 If SMB user credentials can be obtained, then by using psexec metasploit module, we can get the reverse shell 
+
+
+## One of the Best HTB machine to learn SMB Enumeration and exploit without Metasploit
+
+https://www.jdksec.com/hack-the-box/active
+
+It uses impacket python tool through which we could enumerate adminstrator kerberos hashes once we get hold one smb login
+
+
+
