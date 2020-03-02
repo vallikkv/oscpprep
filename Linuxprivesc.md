@@ -20,6 +20,9 @@ Kernel exploits are typically our last resort, as there is a risk that we crash 
 $ python -c 'import pty; pty.spawn("/bin/bash");'  
 user@machine:
 
+## Double charcters
+
+I'm guessing both terminals had stty echo, so you probably needed to Ctrl-Z and stty -echo on your local terminal and bg to get back to the remote shell.
 
 **2. Identifcation methods**
 1. Check su privileged files
