@@ -1,5 +1,13 @@
 # Reverse shell scripts
 
+## Proper working reverse shell
+```
+CTRL + Z -> It will run the session in the background
+stty raw -echo
+fg
+fg
+```
+
 http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
 ## Using shell
