@@ -38,3 +38,7 @@ grep '[a-z0-9]\{32\}' /dev/sdb
 
 https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/
 
+## Pivoting
+
+https://github.com/21y4d/Notes/blob/master/Pivoting.txt
+
