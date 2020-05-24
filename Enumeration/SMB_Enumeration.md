@@ -36,6 +36,16 @@ smbclient //10.10.10.178/Users -U TempUser
 smbclient -L 10.10.10.178 -N
 ```
 
+Some other commands
+
+```
+smbclient -L 192.168.232.125
+
+smbclient '//192.168.232.135/share$'
+```
+
+
+
 If SMB user credentials can be obtained, then by using psexec metasploit module, we can get the reverse shell 
 
 
