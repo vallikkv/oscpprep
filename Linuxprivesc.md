@@ -6,6 +6,10 @@ https://gtfobins.github.io/
 
 https://github.com/rebootuser/LinEnum
 
+## Restricted shell Bypass
+
+https://www.exploit-db.com/docs/english/44592-linux-restricted-shell-bypass-guide.pdf
+
 
 Linux Privilege escalation
 ==========================
