@@ -36,7 +36,7 @@ smbclient //10.10.10.178/Users -U TempUser
 smbclient -L 10.10.10.178 -N
 ```
 
-Some other commands
+# Some other commands
 
 ```
 smbclient -L 192.168.232.125
