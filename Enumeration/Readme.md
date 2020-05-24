@@ -12,3 +12,10 @@ nc -nv <IP> <port Number>
 ```
 telnet <IP> <PORT number>
 ```
+
+#Nmap scan on all ports
+
+```
+nmap -sC -sV -p- -oA full 127.0.0.1
+nmap -sU -p- -oA udp 127.0.0.1
+```
