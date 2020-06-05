@@ -19,13 +19,34 @@ SecWiki
 2. Service Misconfigurations
 
 a. Insecure Service Properties
+
+Weakness exploitable => Modifying the service configuration file by changing the binpath referring malicious.exe file. Upon executing, the reverse shell can be obtained.
+
 Command  
 
 ```
 .\winpeas quiet servicesinfo
 ```
 
-Use accesschk.exe to check the permission to stop/start the service.
+Use accesschk.exe to check the permission to change the config of service, start/stop the service
+```
+.\accesschk.exe /accepteula -uwcqv user <service name>
+```
+
+```
+sc qc <Servicename>
+```
+Check the START_TYPE
+DEMAND_START means that the service can be start manually
+Binary path name and any dependencies can be identified.
+Service_Start_Name => LocalSystem => Means service is running with system privilege
+
+```
+sc query <servicename>
+```
+STATE => Current state of the service, started or stopped.
+
+e.
 
 b. Unquoted Service Path
 c. Weak Registry Permissions
