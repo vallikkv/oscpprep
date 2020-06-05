@@ -6,7 +6,7 @@
 
 Userpermissions check - accesschk.exe, But old version only supports --accepteula command line option
 
-Techniques
+<u>#### Techniques</u>
 1. Kernel exploits
 
 Tools
