@@ -7,7 +7,7 @@
 Userpermissions check - accesschk.exe, But old version only supports --accepteula command line option
 
 #### Techniques
-1. Kernel exploits
+##### 1. Kernel exploits
 
 Tools
 Windows exploit suggester
@@ -16,9 +16,9 @@ Waston - For recent version of Windows
 Precompiled kernel exploits
 SecWiki
 
-2. Service Misconfigurations
+##### 2. Service Misconfigurations
 
-a. Insecure Service Properties
+##### a. Insecure Service Properties
 
 Weakness exploitable => Modifying the service configuration file by changing the binpath referring malicious.exe file. Upon executing, the reverse shell can be obtained.
 
@@ -46,9 +46,9 @@ sc query <servicename>
 ```
 STATE => Current state of the service, started or stopped.
 
-b. Unquoted Service Path
-c. Weak Registry Permissions
-d. Insecure Service Executables
-e. DLL Hijacking
+##### b. Unquoted Service Path
+##### c. Weak Registry Permissions
+##### d. Insecure Service Executables
+##### e. DLL Hijacking
 
 
