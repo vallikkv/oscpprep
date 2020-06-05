@@ -1,4 +1,4 @@
-# Privilege escalation tools
+# Tools - Privilege escalation
 
 1. Winpeas
 2. sharup
