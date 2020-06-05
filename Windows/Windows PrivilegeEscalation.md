@@ -25,6 +25,8 @@ Command
 .\winpeas quiet servicesinfo
 ```
 
+Use accesschk.exe to check the permission to stop/start the service.
+
 b. Unquoted Service Path
 c. Weak Registry Permissions
 d. Insecure Service Executables
