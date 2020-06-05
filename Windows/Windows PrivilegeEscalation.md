@@ -37,16 +37,14 @@ Use accesschk.exe to check the permission to change the config of service, start
 sc qc <Servicename>
 ```
 Check the START_TYPE
-DEMAND_START means that the service can be start manually
-Binary path name and any dependencies can be identified.
-Service_Start_Name => LocalSystem => Means service is running with system privilege
+DEMAND_START means that the service can be start manually <br />
+Binary path name and any dependencies can be identified. <br />
+Service_Start_Name => LocalSystem => Means service is running with system privilege  <br />
 
 ```
 sc query <servicename>
 ```
 STATE => Current state of the service, started or stopped.
-
-e.
 
 b. Unquoted Service Path
 c. Weak Registry Permissions
