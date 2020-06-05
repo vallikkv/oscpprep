@@ -19,7 +19,11 @@ SecWiki
 2. Service Misconfigurations
 
 a. Insecure Service Properties
-Command =>  .\winpeas quiet servicesinfo
+Command  
+
+```
+.\winpeas quiet servicesinfo
+```
 
 b. Unquoted Service Path
 c. Weak Registry Permissions
