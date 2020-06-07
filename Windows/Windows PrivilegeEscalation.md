@@ -51,4 +51,8 @@ STATE => Current state of the service, started or stopped.
 ##### d. Insecure Service Executables
 ##### e. DLL Hijacking
 
-
+##### 3. AutoRuns
+If we are able to write to an AutoRun executable and able to restart the system,then t is possible to escalate privileges
+```
+.\winPEASany.exe quiet applicationsinfo
+```
