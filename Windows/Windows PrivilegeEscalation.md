@@ -51,8 +51,25 @@ STATE => Current state of the service, started or stopped.
 ##### d. Insecure Service Executables
 ##### e. DLL Hijacking
 
-##### 3. AutoRuns
+##### 3. Registry exploits
+
+AutoRuns
+
 If we are able to write to an AutoRun executable and able to restart the system,then t is possible to escalate privileges
 ```
 .\winPEASany.exe quiet applicationsinfo
 ```
+
+Command to enumerate the AutoRun executables manually
+
+```
+reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+```
+
+Then use accesschk.exe to verify the permissions of each service.
+
+```
+.\accesschk.exe /accepteula -wvu "C:\ProgramFiles\<Sample Program>\<program.exe>"
+```
+
+
