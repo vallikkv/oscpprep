@@ -18,15 +18,17 @@ SecWiki
 
 ##### 2. Service Misconfigurations
 
+Command to check all service misconfigurations.
+
+```
+.\winpeas quiet servicesinfo
+```
+
 ##### a. Insecure Service Properties
 
 Weakness exploitable => Modifying the service configuration file by changing the binpath referring malicious.exe file. Upon executing, the reverse shell can be obtained.
 
 Command  
-
-```
-.\winpeas quiet servicesinfo
-```
 
 Use accesschk.exe to check the permission to change the config of service, start/stop the service
 ```
@@ -47,6 +49,8 @@ sc query <servicename>
 STATE => Current state of the service, started or stopped.
 
 ##### b. Unquoted Service Path
+
+
 ##### c. Weak Registry Permissions
 ##### d. Insecure Service Executables
 ##### e. DLL Hijacking
