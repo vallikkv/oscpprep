@@ -19,3 +19,9 @@ telnet <IP> <PORT number>
 nmap -sC -sV -p- -oA full 127.0.0.1
 nmap -sU -p- -oA udp 127.0.0.1
 ```
+
+## Go buster command
+
+```
+gobuster dir --url http://10.10.10.37 --wordlist /usr/share/wordlists/dirb/common.txt
+```
