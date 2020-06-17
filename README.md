@@ -1,5 +1,9 @@
 # OSCP Preparation notes
 
+## Enumeration checklist on each ports
+
+https://medium.com/oscp-cheatsheet/oscp-cheatsheet-6c80b9fa8d7e
+
 ## Enumeration Ports and purposes
 
 https://sushant747.gitbooks.io/total-oscp-guide/list_of_common_ports.html
