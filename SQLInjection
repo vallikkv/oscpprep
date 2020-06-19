@@ -1,5 +1,9 @@
 # SQL Injection & SQLMAP commands
 
+##  Mysql login page bypass using sql injection 
+
+https://sechow.com/bricks/docs/login-1.html
+
 ## SQLmap command
 
 1. To list the databases
