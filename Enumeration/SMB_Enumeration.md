@@ -60,9 +60,10 @@ It uses impacket python tool through which we could enumerate adminstrator kerbe
 
 ## If VHD files are found in SMB, best way is to mount and access those files
 
-Command to mount the VHD files (SMB)
+Command to mount the SMB folder
 
 Reference: https://0xrick.github.io/hack-the-box/bastion/
+          https://hackso.me/bastion-htb-walkthrough/
 
 ```
 sudo mount -t cifs -o username=guest //10.10.10.134/Backups /mnt/bastion/
@@ -71,3 +72,8 @@ sudo mount -t cifs -o username=guest <Remote share folder /mnt/<Mount folder in 
 
 ```
 
+Mount VHD files from the existing mount 
+
+```
+guestmount -a '/mnt/bastion/WindowsImageBackup/L4mpje-PC/Backup 2019-02-22 124351/9b9cfbc4-369e-11e9-a17c-806e6f6e6963.vhd' -m /dev/sda1 --ro /mnt/vhd3
+```
