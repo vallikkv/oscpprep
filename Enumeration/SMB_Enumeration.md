@@ -58,4 +58,16 @@ https://www.jdksec.com/hack-the-box/active
 It uses impacket python tool through which we could enumerate adminstrator kerberos hashes once we get hold one smb login
 
 
+## If VHD files are found in SMB, best way is to mount and access those files
+
+Command to mount the VHD files (SMB)
+
+Reference: https://0xrick.github.io/hack-the-box/bastion/
+
+```
+sudo mount -t cifs -o username=guest //10.10.10.134/Backups /mnt/bastion/
+
+sudo mount -t cifs -o username=guest <Remote share folder /mnt/<Mount folder in Kali machine>
+
+```
 
