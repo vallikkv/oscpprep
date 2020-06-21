@@ -1,5 +1,16 @@
 # SQL Injection & SQLMAP commands
 
+## References
+
+
+Payloads
+https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b
+
+Pentestmonkey covers different version of databases
+http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet
+
+
+
 ##  Mysql login page bypass using sql injection 
 
 https://sechow.com/bricks/docs/login-1.html
