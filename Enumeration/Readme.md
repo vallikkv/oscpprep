@@ -24,4 +24,6 @@ nmap -sU -p- -oA udp 127.0.0.1
 
 ```
 gobuster dir --url http://10.10.10.37 --wordlist /usr/share/wordlists/dirb/common.txt
+
+gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://10.10.10.63:50000 -o gobuster-medium.txt
 ```
